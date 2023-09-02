@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+	<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+		<title>ChatNPC</title>
+		<link rel="stylesheet" href="second.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="./index.css">
+
+	</head>
+
+	<body>
+		<div class="back">
+		</div>
+		<main>
+			<section class="chatbot-container">
+				<div class="chatbot-header">
+					<img src="images/owl-logo.png" class="logo">
+					<h1 class="title">ChatNPC</h1>
+					<h2 class="subtitle">Chat with an NPC!</h2>
+					<p class="supportId" id="topic">User ID: 1344</p>
+					<button class="clear-btn" id="clear-btn">Change NPC</button>
+				</div>
+				<div class="chatbot-conversation-container" id="chatbot-conversation">
+					<div class="speech speech-ai">
+						👋Welcome to <strong>ChatNPC!</strong> Here you can chat with your favourite AI-powered NPCs and have some fun along the way.
+					</div>
+
+					<div class="speech speech-ai">
+						Which NPC do you want to talk with? Please select one.
+					</div>
+
+					<div class="speech small-chat">
+						1. <strong>Sakura</strong>, a delicate yet fierce anime girl 🌸
+					</div>
+
+					<div class="speech small-chat">
+						2. <strong>Eddie</strong>, a ruthless pirate captain 🏴‍☠️
+					</div>
+
+					<div class="speech small-chat">
+						3. <strong>Ninja</strong>, a devoted practitioner of ninjutsu 🥷
+					</div>
+
+					<div class="speech small-chat">
+						4. <strong>Lucifer</strong>, a wicked and cruel villain 💀
+					</div>
+				</div>
+				<form id="form" class="chatbot-input-container">
+					<input name="user-input" type="text" id="user-input" required>
+					<button id="submit-btn" class="submit-btn">
+						<img 
+							src="images/send-btn-icon.png" 
+							class="send-btn-icon"
+						>
+					</button>
+				</form>
+
+				<h2 id="warning">⚠️The responses from NPCs might take a while.</h2>
+			</section>
+			<div>
+			</div>
+			
+		</main>
+		
+		<script type="module" src="index.js"></script>
+	</body>
+
+</html>
